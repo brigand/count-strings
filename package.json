@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/brigand/count-strings/issues"
   },
-  "homepage": "https://github.com/brigand/count-strings#readme"
+  "homepage": "https://github.com/brigand/count-strings#readme",
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
 }
