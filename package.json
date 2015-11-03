@@ -1,0 +1,23 @@
+{
+  "name": "count-strings",
+  "version": "0.1.0",
+  "description": "counts strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "strings",
+    "count"
+  ],
+  "author": "Frankie Bagnardi <f.bagnardi@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brigand/count-strings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brigand/count-strings/issues"
+  },
+  "homepage": "https://github.com/brigand/count-strings#readme"
+}
