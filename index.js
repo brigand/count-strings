@@ -1,14 +1,27 @@
 module.exports = function count(hay, needle) {
     var matches = 0;
-    for (var i = 0; i < hay.length - needle.length + 1; i++) {
-        var fail = false;
-        for (var j = 0; j < needle.length; j++) {
-            if (hay[i + j] !== needle[j]) {
-                fail = true;
-                break
-            }
-        }
-        if (!fail) matches++
+    var i = 0;
+    var j = 0;
+    var length = hay.length;
+    var sublength = needle.length;
+
+    if (sublength === 0) {
+        return length;
     }
-    return matches
-}
+
+    while (i < length) {
+        if (hay[i + j] === needle[j]) {
+            j++;
+            if (j >= sublength) {
+                matches++;
+                i += j;
+                j = 0;
+            }
+        } else {
+            j = 0;
+            i++;
+        }
+    }
+
+    return matches;
+};
